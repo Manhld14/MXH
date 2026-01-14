@@ -1,0 +1,1361 @@
+{
+  "Version": 1,
+  "Hash": "4a8SUSiqVsbuqUhqA0BrkdNWaVV8y5V3gDScQOj92v4=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Backend\\wwwroot",
+      "Source": "Backend",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "avatars/4028da42-b0c7-4d2d-85f1-50b738bab017#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "avatars/6f9300da-e142-45e2-9e1d-5ff46a2b5cd8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p52eczq449",
+      "Integrity": "k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\Img\\anh-bia-dep-10.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "Img/anh-bia-dep-10#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h1r2nq0rsk",
+      "Integrity": "myvv+kjQ6MjHh4kokCavFgdZak1pKrHvkU4NvrPCmPY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\anh-bia-dep-10.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\Img\\defauAVT.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "Img/defauAVT#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "133csi3yn3",
+      "Integrity": "Y5F1oOCwWL/MbMp5bcR5Nrg3Sx/4OyJ/src3HaUGwxU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\defauAVT.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1)#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p52eczq449",
+      "Integrity": "k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/e707645a-a341-412f-b9a0-8a4872b40105_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg"
+    },
+    {
+      "Identity": "D:\\blog\\be\\wwwroot\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\blog\\be\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhbgwkck1l",
+      "Integrity": "Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "avatars/4028da42-b0c7-4d2d-85f1-50b738bab017.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 15:40:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/4028da42-b0c7-4d2d-85f1-50b738bab017.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 15:40:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "avatars/4028da42-b0c7-4d2d-85f1-50b738bab017.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 15:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.p52eczq449.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 15:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p52eczq449"
+        },
+        {
+          "Name": "label",
+          "Value": "avatars/6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw="
+        }
+      ]
+    },
+    {
+      "Route": "Img/anh-bia-dep-10.h1r2nq0rsk.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\Img\\anh-bia-dep-10.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"myvv+kjQ6MjHh4kokCavFgdZak1pKrHvkU4NvrPCmPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Nov 2025 17:53:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h1r2nq0rsk"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/anh-bia-dep-10.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-myvv+kjQ6MjHh4kokCavFgdZak1pKrHvkU4NvrPCmPY="
+        }
+      ]
+    },
+    {
+      "Route": "Img/anh-bia-dep-10.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\Img\\anh-bia-dep-10.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"myvv+kjQ6MjHh4kokCavFgdZak1pKrHvkU4NvrPCmPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Nov 2025 17:53:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-myvv+kjQ6MjHh4kokCavFgdZak1pKrHvkU4NvrPCmPY="
+        }
+      ]
+    },
+    {
+      "Route": "Img/defauAVT.133csi3yn3.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\Img\\defauAVT.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5F1oOCwWL/MbMp5bcR5Nrg3Sx/4OyJ/src3HaUGwxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Nov 2025 16:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "133csi3yn3"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/defauAVT.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5F1oOCwWL/MbMp5bcR5Nrg3Sx/4OyJ/src3HaUGwxU="
+        }
+      ]
+    },
+    {
+      "Route": "Img/defauAVT.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\Img\\defauAVT.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5F1oOCwWL/MbMp5bcR5Nrg3Sx/4OyJ/src3HaUGwxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Nov 2025 16:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5F1oOCwWL/MbMp5bcR5Nrg3Sx/4OyJ/src3HaUGwxU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:25:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:25:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:43:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:43:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:00:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:00:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:44:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).p52eczq449.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:44:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p52eczq449"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2W1/KHc3BO+JGDV75w9YoN9yBssS9EZTNFG5VCioLw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:32:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 06:32:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:43:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.uhbgwkck1l.jpg",
+      "AssetFile": "D:\\blog\\be\\wwwroot\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 13:43:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhbgwkck1l"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk47qYYqnCBFFsMyDnbxbUYLaODaIAJXrbRqCKwBwA0="
+        }
+      ]
+    }
+  ]
+}

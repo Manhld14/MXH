@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\Img\\anh-bia-dep-10.jpg",
+      "PackagePath": "staticwebassets\\Img\\anh-bia-dep-10.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\Img\\defauAVT.jpg",
+      "PackagePath": "staticwebassets\\Img\\defauAVT.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg",
+      "PackagePath": "staticwebassets\\avatars\\4028da42-b0c7-4d2d-85f1-50b738bab017.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg",
+      "PackagePath": "staticwebassets\\avatars\\6f9300da-e142-45e2-9e1d-5ff46a2b5cd8.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\28fa6cd8-8c10-4485-b06d-b25abc3e8373_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3fa023ee-1bd9-4155-939b-72d029c9c275_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b2855346-6ea1-41e1-b89c-93f9331d55cb_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c7726bda-3853-410f-9a3a-bf13668e36f7_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c7e291c5-cf7d-496f-a30b-dce4b8950c1a_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\e4b0b5bf-ce3a-4368-80be-613436721d1c_tải xuống (1).jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e707645a-a341-412f-b9a0-8a4872b40105_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ed5c6308-2bf3-4d2d-b0ad-b9f366316f9f_tải xuống.jpg"
+    },
+    {
+      "Id": "D:\\blog\\be\\wwwroot\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ed6eaacf-43bb-4a69-92aa-07446861559f_tải xuống.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Backend.props",
+      "PackagePath": "build\\Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Backend.props",
+      "PackagePath": "buildMultiTargeting\\Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Backend.props",
+      "PackagePath": "buildTransitive\\Backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
