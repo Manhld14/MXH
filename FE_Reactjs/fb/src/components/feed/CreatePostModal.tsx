@@ -1,6 +1,6 @@
 // src/components/feed/CreatePostModal.tsx
 import { useState, useRef, useEffect } from 'react';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 
 interface CreatePostModalProps {
@@ -11,7 +11,7 @@ interface CreatePostModalProps {
 }
 
 export function CreatePostModal({ isOpen, onClose, onSubmit, isLoading = false }: CreatePostModalProps) {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [content, setContent] = useState('');
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [previews, setPreviews] = useState<string[]>([]);

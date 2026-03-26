@@ -1,15 +1,19 @@
 // src/hooks/usePosts.ts
-import { useState, useEffect, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
 import type { Post, Comment } from '../types';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import {
-  fetchPosts,
-  createPost,
-  updatePost,
-  deletePost,
-  addComment,
-  resolveImageUrl,
-} from '../services/api';
-import { useAuth } from '../context/AuthContext';
+  fetchPostsThunk,
+  createPostThunk,
+  updatePostThunk,
+  deletePostThunk,
+  addCommentThunk,
+  addTempPost,
+  removeTempPost,
+  optimisticUpdatePost,
+  addTempComment,
+  removeComment,
+} from '../redux/slices/postsSlice';
 
 interface UsePostsReturn {
   posts: Post[];
@@ -24,33 +28,21 @@ interface UsePostsReturn {
 }
 
 export function usePosts(): UsePostsReturn {
-  const { currentUser } = useAuth();
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const dispatch = useAppDispatch();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
+  const posts = useAppSelector((s) => s.posts.posts);
+  const loading = useAppSelector((s) => s.posts.loading);
+  const error = useAppSelector((s) => s.posts.error);
 
-  const loadPosts = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const data = await fetchPosts(1, 20, currentUser?.userId);
-      // Resolve image URLs từ BE (relative → absolute)
-      // Giữ nguyên URL relative cho user/comment để khớp với hardcode ở FE component
-      const resolved = data.map((p) => ({
-        ...p,
-        images: p.images?.map((img) => ({ ...img, imageUrl: resolveImageUrl(img.imageUrl) })) ?? [],
-      }));
-      setPosts(resolved);
-    } catch (err) {
-      setError('Không thể tải bài viết. Vui lòng thử lại.');
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  }, [currentUser?.userId]);
+  const loadPosts = useCallback(() => {
+    return dispatch(fetchPostsThunk(currentUser?.userId));
+  }, [dispatch, currentUser?.userId]);
 
   useEffect(() => {
-    loadPosts();
+    const promise = loadPosts();
+    return () => {
+      promise.abort();
+    };
   }, [loadPosts]);
 
   // ─── POST CRUD ───────────────────────────────────────────────────────────
@@ -59,8 +51,9 @@ export function usePosts(): UsePostsReturn {
     async (payload: { content: string; images?: File[] }): Promise<Post> => {
       if (!currentUser) throw new Error('Chưa đăng nhập');
 
+      const tempId = -Date.now();
       const tempPost: Post = {
-        postId: -Date.now(),
+        postId: tempId,
         user: {
           userId: currentUser.userId,
           fullName: currentUser.fullName,
@@ -75,69 +68,55 @@ export function usePosts(): UsePostsReturn {
         comments: [],
       };
 
-      setPosts((prev) => [tempPost, ...prev]);
+      dispatch(addTempPost(tempPost));
 
-      try {
-        const newPost = await createPost({
+      const result = await dispatch(
+        createPostThunk({
           userId: currentUser.userId,
           content: payload.content,
           images: payload.images,
-        });
-        setPosts((prev) => prev.map((p) => (p.postId === tempPost.postId ? newPost : p)));
-        return newPost;
-      } catch (err) {
-        setError('Không thể tạo bài viết.');
-        setPosts((prev) => prev.filter((p) => p.postId !== tempPost.postId));
-        throw err;
+          tempId,
+        })
+      );
+
+      if (createPostThunk.rejected.match(result)) {
+        throw new Error('Không thể tạo bài viết.');
       }
+
+      return (result.payload as { newPost: Post }).newPost;
     },
-    [currentUser]
+    [dispatch, currentUser]
   );
 
   const editPost = useCallback(
     async (postId: number, payload: { content: string }): Promise<void> => {
       // Optimistic update
-      setPosts((prev) =>
-        prev.map((p) => (p.postId === postId ? { ...p, content: payload.content } : p))
-      );
-      try {
-        const updated = await updatePost(postId, payload);
-        // Merge lại dữ liệu từ server
-        setPosts((prev) =>
-          prev.map((p) =>
-            p.postId === postId
-              ? {
-                  ...p,
-                  content: updated.content ?? payload.content,
-                  images: updated.images?.map((img) => ({
-                    ...img,
-                    imageUrl: resolveImageUrl(img.imageUrl),
-                  })) ?? p.images,
-                }
-              : p
-          )
-        );
-      } catch (err) {
-        setError('Không thể cập nhật bài viết.');
-        await loadPosts();
-        throw err;
+      dispatch(optimisticUpdatePost({ postId, content: payload.content }));
+
+      const result = await dispatch(updatePostThunk({ postId, content: payload.content }));
+      if (updatePostThunk.rejected.match(result)) {
+        // Revert: reload posts từ server
+        loadPosts();
+        throw new Error('Không thể cập nhật bài viết.');
       }
     },
-    [loadPosts]
+    [dispatch, loadPosts]
   );
 
   const removePost = useCallback(
     async (postId: number): Promise<void> => {
-      setPosts((prev) => prev.filter((p) => p.postId !== postId));
-      try {
-        await deletePost(postId);
-      } catch (err) {
-        setError('Không thể xóa bài viết.');
-        await loadPosts();
-        throw err;
+      // Optimistic remove
+      const postToRemove = posts.find((p) => p.postId === postId);
+      dispatch(removeTempPost(postId));
+
+      const result = await dispatch(deletePostThunk(postId));
+      if (deletePostThunk.rejected.match(result)) {
+        // Restore on failure
+        if (postToRemove) loadPosts();
+        throw new Error('Không thể xóa bài viết.');
       }
     },
-    [loadPosts]
+    [dispatch, posts, loadPosts]
   );
 
   // ─── COMMENT ────────────────────────────────────────────────────────────
@@ -146,8 +125,9 @@ export function usePosts(): UsePostsReturn {
     async (postId: number, content: string): Promise<Comment> => {
       if (!currentUser) throw new Error('Chưa đăng nhập');
 
+      const tempCommentId = -Date.now();
       const tempComment: Comment = {
-        commentId: -Date.now(),
+        commentId: tempCommentId,
         user: {
           userId: currentUser.userId,
           fullName: currentUser.fullName,
@@ -157,63 +137,31 @@ export function usePosts(): UsePostsReturn {
         createdAt: new Date().toISOString(),
       };
 
-      setPosts((prev) =>
-        prev.map((p) =>
-          p.postId === postId
-            ? { ...p, comments: [...(p.comments ?? []), tempComment], commentCount: p.commentCount + 1 }
-            : p
-        )
+      dispatch(addTempComment({ postId, comment: tempComment }));
+
+      const result = await dispatch(
+        addCommentThunk({
+          postId,
+          userId: currentUser.userId,
+          content,
+          tempCommentId,
+        })
       );
 
-      try {
-        const resolved = await addComment(postId, currentUser.userId, content);
-        setPosts((prev) =>
-          prev.map((p) =>
-            p.postId === postId
-              ? {
-                  ...p,
-                  comments: p.comments.map((c) =>
-                    c.commentId === tempComment.commentId ? resolved : c
-                  ),
-                }
-              : p
-          )
-        );
-        return resolved;
-      } catch (err) {
-        setError('Không thể thêm bình luận.');
-        setPosts((prev) =>
-          prev.map((p) =>
-            p.postId === postId
-              ? {
-                  ...p,
-                  comments: p.comments.filter((c) => c.commentId !== tempComment.commentId),
-                  commentCount: p.commentCount - 1,
-                }
-              : p
-          )
-        );
-        throw err;
+      if (addCommentThunk.rejected.match(result)) {
+        throw new Error('Không thể thêm bình luận.');
       }
+
+      return (result.payload as { comment: Comment }).comment;
     },
-    [currentUser]
+    [dispatch, currentUser]
   );
 
-  const removeComment = useCallback(
+  const removeCommentFn = useCallback(
     async (postId: number, commentId: number): Promise<void> => {
-      setPosts((prev) =>
-        prev.map((p) =>
-          p.postId === postId
-            ? {
-                ...p,
-                comments: p.comments.filter((c) => c.commentId !== commentId),
-                commentCount: p.commentCount - 1,
-              }
-            : p
-        )
-      );
+      dispatch(removeComment({ postId, commentId }));
     },
-    []
+    [dispatch]
   );
 
   return {
@@ -225,6 +173,6 @@ export function usePosts(): UsePostsReturn {
     editPost,
     removePost,
     addPostComment,
-    removeComment,
+    removeComment: removeCommentFn,
   };
 }

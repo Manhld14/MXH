@@ -93,12 +93,13 @@ export async function updateProfile(id: number, payload: {
 export async function fetchPosts(
   page = 1,
   pageSize = 10,
-  currentUserId?: number
+  currentUserId?: number,
+  signal?: AbortSignal
 ): Promise<Post[]> {
   const params: Record<string, string | number> = { page, pageSize };
   if (currentUserId !== undefined) params.currentUserId = currentUserId;
-
-  const res = await api.get<PaginatedResponse<Post>>('/api/Posts', { params });
+  
+  const res = await api.get<PaginatedResponse<Post>>('/api/Posts', { params, signal });
   return res.data.items;
 }
 

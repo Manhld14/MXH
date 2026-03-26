@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import type { Post, Comment } from '../../types';
 import { CommentsSection } from './CommentsSection';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 interface PostComponentProps {
   post: Post;
@@ -21,7 +21,7 @@ export function PostCard({
   onDeleteComment,
   isLoading = false,
 }: PostComponentProps) {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [showMenu, setShowMenu] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [editContent, setEditContent] = useState(post.content);

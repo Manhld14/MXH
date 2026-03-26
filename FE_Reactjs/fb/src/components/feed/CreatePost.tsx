@@ -1,14 +1,14 @@
 // src/components/feed/CreatePost.tsx
 import React, { useState } from 'react';
 import { createPost } from '../../services/api';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 interface CreatePostProps {
   onPostCreated?: () => void;
 }
 
 const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [content, setContent] = useState('');
   const [submitting, setSubmitting] = useState(false);
 

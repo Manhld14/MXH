@@ -1,6 +1,6 @@
 // src/components/layout/Header.tsx
 import React, { useState } from 'react';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
@@ -33,7 +33,7 @@ const IconBtn: React.FC<IconBtnProps> = ({ icon, badge, label }) => (
 );
 
 const Header: React.FC = () => {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [activeNav, setActiveNav] = useState<string>('home');
   const [searchFocused, setSearchFocused] = useState(false);
 

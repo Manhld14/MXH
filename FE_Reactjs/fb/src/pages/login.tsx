@@ -2,11 +2,12 @@
 import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login as apiLogin } from '../services/api';
-import { useAuth } from '../context/AuthContext';
+import { useAppDispatch } from '../redux/hooks';
+import { setUser } from '../redux/slices/authSlice';
 
 export default function LoginPage() {
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const dispatch = useAppDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -22,7 +23,7 @@ export default function LoginPage() {
     setError(null);
     try {
       const user = await apiLogin(email, password);
-      login(user);
+      dispatch(setUser(user));
       navigate('/');
     } catch (err: unknown) {
       const axiosErr = err as { response?: { data?: { message?: string } } };

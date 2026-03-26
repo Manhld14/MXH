@@ -1,6 +1,6 @@
 // src/components/layout/LeftSidebar.tsx
 import React from 'react';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 const FriendsIcon = () => (
@@ -71,7 +71,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ icon, label, iconBg, badge })
 
 // ─── Left Sidebar ─────────────────────────────────────────────────────────────
 const LeftSidebar: React.FC = () => {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [showMore, setShowMore] = React.useState(false);
 
   return (

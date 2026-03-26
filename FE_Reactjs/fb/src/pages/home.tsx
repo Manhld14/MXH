@@ -6,11 +6,14 @@ import { PostList } from '../components/feed/PostList';
 import { CreatePostModal } from '../components/feed/CreatePostModal';
 import Stories from '../components/feed/Stories';
 import { usePosts } from '../hooks/usePosts';
-import { useAuth } from '../context/AuthContext';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { clearUser } from '../redux/slices/authSlice';
 
 
 export default function HomePage() {
-  const { currentUser, logout } = useAuth();
+  const dispatch = useAppDispatch();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
+
   const {
     posts,
     loading,
@@ -77,7 +80,7 @@ export default function HomePage() {
                 <span className="text-sm font-semibold">Ảnh</span>
               </button>
               <button
-                onClick={logout}
+                onClick={() => dispatch(clearUser())}
                 className="flex flex-1 items-center justify-center gap-2 rounded py-2 text-gray-400 transition hover:bg-gray-800"
               >
                 <svg className="h-5 w-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

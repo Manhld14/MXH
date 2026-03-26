@@ -1,12 +1,12 @@
 // src/App.tsx
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { useAppSelector } from './redux/hooks';
 import Header from './components/layout/Header';
 import HomePage from './pages/home';
 import LoginPage from './pages/login';
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
-  const { isAuthenticated } = useAuth();
+  const isAuthenticated = useAppSelector((s) => s.auth.isAuthenticated);
   return isAuthenticated ? <>{children}</> : <Navigate to="/login" replace />;
 }
 
@@ -35,13 +35,12 @@ function AppRoutes() {
 function App() {
   return (
     <div className="dark">
-      <AuthProvider>
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
-      </AuthProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+

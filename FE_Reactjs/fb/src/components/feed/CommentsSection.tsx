@@ -1,7 +1,7 @@
 // src/components/feed/CommentsSection.tsx
 import { useState, useRef } from 'react';
 import type { Comment } from '../../types';
-import { useAuth } from '../../context/AuthContext';
+import { useAppSelector } from '../../redux/hooks';
 
 
 interface CommentsSectionProps {
@@ -17,7 +17,7 @@ export function CommentsSection({
   onDeleteComment,
   isLoading = false,
 }: CommentsSectionProps) {
-  const { currentUser } = useAuth();
+  const currentUser = useAppSelector((s) => s.auth.currentUser);
   const [newCommentText, setNewCommentText] = useState('');
   const [isSubmittingComment, setIsSubmittingComment] = useState(false);
   const [showCommentMenu, setShowCommentMenu] = useState<number | null>(null);
