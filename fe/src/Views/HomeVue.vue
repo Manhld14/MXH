@@ -162,6 +162,7 @@
               <button class="btn btn-sm btn-light ms-auto" @click="closePostDetail">✕</button>
             </div>
 
+
             <div v-if="selectedPost" class="mb-3">
               <div class="d-flex align-items-start mb-2">
                 <img :src="`https://localhost:7130${selectedPost.user.avatarUrl}`" class="rounded-circle me-2"
@@ -600,4 +601,5 @@ export default defineComponent({
   height: 22px;
   fill: black;
 }
+
 </style>

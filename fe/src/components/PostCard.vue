@@ -105,7 +105,7 @@ const isLiked = computed(() => (props.post.likedBy || []).includes(uid))
 
 <style scoped>
 .post-card {
-  border-radius: .5rem
+  border-radius: 1.5rem
 }
 
 .post-card img {

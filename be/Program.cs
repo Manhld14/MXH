@@ -1,4 +1,4 @@
-﻿using System.Net.NetworkInformation;
+using System.Net.NetworkInformation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 
@@ -27,7 +27,7 @@ namespace Backend
             {
                 options.AddDefaultPolicy(policy =>
                 {
-                    policy.WithOrigins("http://localhost:5174") // URL frontend Vue
+                    policy.WithOrigins("http://localhost:5173") // React FE
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
