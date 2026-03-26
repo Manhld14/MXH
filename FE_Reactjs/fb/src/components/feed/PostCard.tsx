@@ -138,7 +138,7 @@ export function PostCard({
             {post.images.map((img) => (
               <img
                 key={img.imageId}
-                src={img.imageUrl}
+                src={`https://localhost:7130${img.imageUrl}`}
                 alt="Post image"
                 className="w-full rounded-lg object-cover max-h-80"
               />
